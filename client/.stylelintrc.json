@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order-fix",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "indentation": [
+      2
+    ],
+    "color-hex-case": "upper",
+    "selector-class-pattern": "^.*$",
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": [
+          "/grid/"
+        ]
+      }
+    ]
+  },
+  "files": [
+    "**/*.css",
+    "**/*.scss"
+  ]
+}
